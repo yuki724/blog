@@ -1,5 +1,15 @@
 ## Welcome to GitHub Pages
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
 これはテストです。
 
 You can use the [editor on GitHub](https://github.com/yuki724/blog/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
